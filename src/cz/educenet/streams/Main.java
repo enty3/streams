@@ -17,9 +17,7 @@ public class Main {
     }
 
 
-    /**
-     * Filter strings containing both chars 'n' and 'a'
-     */
+
     public static void printStringsContainingNA() {
         ArrayList<String> data = DataUtils.getRandomStrings();
         List<String> filtr = data.stream()
@@ -28,10 +26,7 @@ public class Main {
         System.out.println(filtr);
     }
 
-    /**
-     * Filter strings containing both chars 'n' or 'a'
-     * Print count
-     */
+
     public static void printCountOfStringContainingNOrA() {
     ArrayList<String> data = DataUtils.getRandomStrings();
         System.out.println(data.stream()
@@ -39,9 +34,7 @@ public class Main {
             .count());
 
 }
-    /**
-     * Filter numbers in range <3;99>
-     */
+
     public static void printAgesAbleToPlayWithLego() {
         ArrayList<Integer> data = DataUtils.getRandomNumbers();
         System.out.println(data.stream()
@@ -51,10 +44,7 @@ public class Main {
 
     }
 
-    /**
-     * Filter numbers in range <3;99>
-     * Print count
-     */
+
     public static void printCountOfAgesAbleToPlayWithLego() {
         ArrayList<Integer> data = DataUtils.getRandomNumbers();
         System.out.println(data.stream()
@@ -78,12 +68,9 @@ public class Main {
                 .map(i -> i + "$")
                 .collect(Collectors.toList())
         );
-        // TODO .stream().map(..).toList()
+
     }
 
-    /**
-     * ["Albert", "Benedikt", "Cecil"] -> "Albert - Benedikt - Cecil"
-     */
     public static void joinStringsBySpacedDash() {
         ArrayList<String> data = DataUtils.getRandomStrings();
         System.out.println(
